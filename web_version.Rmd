@@ -1,0 +1,22 @@
+---
+title: "Title"
+author: "[Christian Reitan](https://github.com/drwernicke)"
+date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    css: style.css
+    theme: united
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 3
+    number_sections: false
+    code_folding: hide
+    code_download: true
+bibliography: references.bib
+link-citations: true
+---
+
+```{r child = 'body.Rmd'}
+```

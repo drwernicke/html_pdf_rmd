@@ -1,0 +1,36 @@
+---
+title: "test_pdf"
+output: 
+  pagedown::html_paged:
+    theme: united
+    toc: true
+    number_sections: false
+    css: ["pdf.css"]
+knit: pagedown::chrome_print
+---
+
+# PDF Version vs web version
+Uses the `pagedown` package with a copy of the css file from the web version with minor changes:
+
+
+PDF version (pdf.css):
+```
+body {
+  font-size: 1rem; /* Changed */
+  text-align: left; /* Changed */
+}
+```
+
+Original web version (style.css): 
+```
+body {
+  font-size: 1.6rem; 
+  text-align: justify;
+}
+```
+
+
+
+
+```{r child = 'body.Rmd'}
+```
