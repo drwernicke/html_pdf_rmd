@@ -12,7 +12,7 @@ knit: pagedown::chrome_print
 # PDF Version vs web version
 Uses the `pagedown` package with a copy of the css file from the web version with minor changes:
 
-Would very much like to be able to change/specify font family for pdf version. Should it be done in the pdf.css or elsewhere? This sentence were also written to test a pull request to Christian. I forked the repo from Christian, created a "test" branch, and made this edit and will now do a pull request. Then I will wait for something to happen.
+The fonts are controlled by the css files meaning you can have different fonts (and other graphical properties) for each document.
 
 PDF version (pdf.css):
 ```
