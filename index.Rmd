@@ -1,13 +1,13 @@
 ---
-title: "Title"
+title: "Sample web page"
 author: "[Christian Reitan](https://github.com/drwernicke)"
 date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
     css: style.css
-    theme: united
+    theme: default
     toc: true
-    toc_float:
+    toc_float: 
       collapsed: false
       smooth_scroll: true
     toc_depth: 3
@@ -17,6 +17,19 @@ output:
 bibliography: references.bib
 link-citations: true
 ---
+
+## Preamble
+
+This style was produced using the lux theme from the bootswatch homepage. The relevant YAML is:
+
+```
+output:
+  html_document:
+    css: style.css
+    theme: default
+```
+
+And then you can just replace style.css with any bootstrap compatible css file. Et voila.
 
 ```{r child = 'body.Rmd'}
 ```

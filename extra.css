@@ -1,0 +1,10 @@
+.btn {
+	border-radius: 0px;
+}
+
+#TOC {
+  position: fixed;
+  left: 30px;
+  max-width:100%;
+  overflow:auto;
+}

@@ -1,16 +1,18 @@
 ---
-title: "test_pdf"
+title: "Sample PDF document."
 output: 
   pagedown::html_paged:
-    theme: united
+    theme: default
     toc: true
     number_sections: false
     css: ["pdf.css"]
 knit: pagedown::chrome_print
 ---
 
+\newpage
+
 # PDF Version vs web version
-Uses the `pagedown` package with a copy of the css file from the web version with minor changes:
+Uses the `pagedown` package with a custom css file which could be almost the same as the web version with minor changes:
 
 The fonts are controlled by the css files meaning you can have different fonts (and other graphical properties) for each document.
 
@@ -30,7 +32,7 @@ body {
 }
 ```
 
-
+\newpage
 
 
 ```{r child = 'body.Rmd'}

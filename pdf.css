@@ -4,12 +4,18 @@ body {
 }
 
 .title {
-  font-size: 37px; 
+  font-size: 24px; 
+  color: firebrick;
+}
+
+.subtitle {
+  font-size: 10px; 
   color: firebrick;
 }
 
 h1,h2,h3,h4,h5 {
   text-align: left;
+  font-size: 20px; 
 }
 
 .blue-box {
